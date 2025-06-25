@@ -1,0 +1,43 @@
+Los pasos son los siguientes:
+
+>>> npm install express mysql2 cors dotenv
+
+Se crean las carpetas
+
+-config
+-controllers
+-models
+-routes
+
+- server.js
+
+---------------------------------
+backend/
+├── config/
+│   └── db.js          # Configuración de la base de datos
+├── controllers/
+│   └── products.js    # Lógica de controladores
+├── models/
+│   └── Product.js     # Modelo de datos
+├── routes/
+│   └── products.js    # Rutas API
+├── server.js          # Punto de entrada
+└── package.json
+
+
+-------------------------------
+
+Creando proyecto con react vite
+
+npm create vite@latest
+
+-react
+- js
+
+cd front
+npm install
+npm install bootstrap axios
+
+
+
+
