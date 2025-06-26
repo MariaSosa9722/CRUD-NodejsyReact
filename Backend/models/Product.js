@@ -2,10 +2,17 @@ const db = require('../config/db');
 
 class Product {
   
-  static async getAll() {
+    static async getAll() {
     const [rows] = await db.query('SELECT * FROM products');
     return rows;
   }
+
+  
+  // Ejemplo con procedimiento almacenado
+  // static async getAll() {
+  //   const [rows] = await db.query('CALL `spGetproducts`(); ');
+  //   return rows[0];
+  // }
 
   static async getById(id) {
     const [rows] = await db.query('SELECT * FROM products WHERE id = ?', [id]);
